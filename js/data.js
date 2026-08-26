@@ -31,6 +31,12 @@ const PROFILE_DATA = [
   },
   {
     type: "IA",
+    title: "GitHub Copilot",
+    text: "Análisis y desarrollo de aplicaciones utilizando chat de IA + modo agente",
+    tags: ["IA", "Inteligencia artificial", "Copilot", "Agente"]
+  },
+  {
+    type: "IA",
     title: "Continue",
     text: "Análisis y desarrollo de aplicaciones utilizando chat de IA con gasto reducido sin utilizar modo agente",
     tags: ["IA", "Inteligencia artificial", "Continue"]
@@ -38,8 +44,8 @@ const PROFILE_DATA = [
   {
     type: "GESTIÓN",
     title: "Gestión y entrega de proyectos IT",
-    text: "Experiencia en:\nPlanificación\nOrganización\nAnálisis de incidencias\nTrato con usuarios\nDiseño de soluciones\nResponsabilidad sobre proyectos IT",
-    tags: ["Proyectos", "Gestión de proyectos", "IT Project Manager", "Planificación", "Incidencias"]
+    text: "Experiencia en:\nPlanificación\nOrganización\nAnálisis de incidencias\nTrato con usuarios\nDiseño de soluciones\nResponsabilidad sobre proyectos IT\nDocumentación",
+    tags: ["Proyectos", "Gestión de proyectos", "IT Project Manager", "Planificación", "Incidencias", "Documentación"]
   },
   {
     type: "FORMACIÓN",
@@ -60,6 +66,12 @@ const PROFILE_DATA = [
     tags: ["Formación", "Administración de Sistemas","Titulación"]
   },
   {
+    type: "FORMACIÓN",
+    title: "Otros cursos y formaciones",
+    text: "Cursos realizados inferiores a 30 horas:\nPL/SQL\nUML\nGestión de proyectos\nCalidad\nCoach\nTest Unitarios\nJenkins\nExcel\n",
+    tags: ["Formación", "Cursos","PL/SQL","UML","Gestión","Calidad","Coach","Test","Jenkins","Office"]
+  },
+  {
     type: "CERTIFICACIÓN",
     title: "Bootcamp 2026 — IA Generativa, LLM Apps, Agentes IA, Cursor AI",
     text: "Formación reciente centrada en:\nInteligencia artificial generativa\nAplicaciones con LLM\nAgentes de IA\nHerramientas de desarrollo asistido",
@@ -74,7 +86,37 @@ const PROFILE_DATA = [
   {
     type: "TECNOLOGÍA",
     title: "Ecosistema de desarrollo",
-    text: "Experiencia y conocimientos en:\nAngular\nHTML\nPL/SQL\nGit\nSVN\nYAML\nJSON\nXML\nAdemás del ecosistema Java",
-    tags: ["Angular", "HTML", "PL/SQL", "Git", "SVN", "YAML", "JSON", "XML"]
+    text: "Experiencia y conocimientos en:\nAngular\nHTML\nPL/SQL\nGit\nSVN\nYAML\nJSON\nXML\nJS\nCSS\nAdemás del ecosistema Java (JSP, JSF,...)",
+    tags: ["Angular", "HTML", "PL/SQL", "Oracle", "Git", "SVN", "YAML", "JSON","CSS","JS","XML","Java"]
+  },
+  {
+    type: "TECNOLOGÍA",
+    title: "Herramientas",
+    text: "Experiencia con herramientas de trabajo como:\nEclipse\nVisual Studio\nIntelliJ\nGitlab\nPostman\nSOAP UI\nSQL Developer\nHerramientas Office\nSTS\nJenkins\nJIRA",
+    tags: ["Eclipse", "Visual Studio", "IntelliJ", "Gitlab", "Git", "Postman", "SOAP UI", "SQL", "Office", "STS", "Herramientas", "Aplicaciones", "IDE", "Jenkins", "JIRA"]
+  },
+  {
+    type: "TECNOLOGÍA",
+    title: "Seguridad y calidad",
+    text: "Experiencia con herramientas de seguridad y calidad como:\nKiuwan\nIQ Server\nSonar\nFortify",
+    tags: ["Fortify", "Kiuwan", "IntelliJ", "IQ", "Git", "Fortify"]
+  },
+  {
+    type: "TECNOLOGÍA",
+    title: "Testing",
+    text: "Experiencia con herramientas de testing como:\nJunit\nJacoco\nMockito",
+    tags: [ "Junit", "IQ", "Jacoco", "Mockito"]
+  },
+  {
+    type: "TECNOLOGÍA",
+    title: "APIS",
+    text: "Experiencia con publicación de APIS en:\nAxway\nAPIGEE",
+    tags: [ "Axway", "APIGEE"]
+  },
+  {
+    type: "METODOLOGIA",
+    title: "Metodología de trabajo",
+    text: "Metodología de trabajo utilizadas:\nWaterfall\nScrum\nKanban",
+    tags: [ "Kanban", "Waterfall", "Scrum", "Metodología", "Agile", "JIRA"]
   }
 ];
