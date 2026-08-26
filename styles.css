@@ -54,13 +54,15 @@ h1 {
 }
 
 .title-row{
+  position:relative;
   display:flex;
-  align-items:center;
   justify-content:center;
-  gap:20px;
+  align-items:center;
 }
 
 .logo{
+  position:absolute;
+  left:0;
   height:clamp(3rem,8vw,6.5rem);
   width:auto;
 }
