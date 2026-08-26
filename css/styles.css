@@ -341,3 +341,88 @@ footer a {
     flex-direction: column;
   }
 }
+
+.contact-trigger{
+  border:0;
+  background:none;
+  color:var(--muted);
+  font-family:inherit;
+  font-size:inherit;
+  cursor:pointer;
+  padding:0;
+}
+
+.contact-trigger:hover{
+  color:var(--text);
+}
+
+.modal-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(3,6,14,.72);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  z-index:100;
+}
+
+.modal-overlay.hidden{
+  display:none;
+}
+
+.modal{
+  position:relative;
+  width:min(420px,100%);
+  padding:32px;
+  border:1px solid var(--line);
+  background:var(--panel);
+  backdrop-filter:blur(18px);
+  border-radius:24px;
+  box-shadow:0 25px 80px rgba(0,0,0,.4);
+}
+
+.modal h2{
+  margin:0 0 20px;
+  font-size:1.4rem;
+}
+
+.modal-close{
+  position:absolute;
+  top:16px;
+  right:16px;
+  border:0;
+  background:none;
+  color:var(--muted);
+  font-size:1.1rem;
+  cursor:pointer;
+}
+
+.modal-close:hover{
+  color:var(--text);
+}
+
+.contact-list{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+.contact-list li{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.contact-list a{
+  color:var(--text);
+  text-decoration:none;
+  word-break:break-all;
+}
+
+.contact-list a:hover{
+  color:var(--accent);
+}
