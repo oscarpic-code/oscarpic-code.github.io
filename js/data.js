@@ -68,8 +68,8 @@ const PROFILE_DATA = [
   {
     type: "FORMACIÓN",
     title: "Otros cursos y formaciones",
-    text: "Cursos realizados inferiores a 30 horas:\nPL/SQL\nUML\nGestión de proyectos\nCalidad\nCoach\nTest Unitarios\nJenkins\nExcel\n",
-    tags: ["Formación", "Cursos","PL/SQL","UML","Gestión","Calidad","Coach","Test","Jenkins","Office"]
+    text: "Cursos realizados inferiores a 30 horas:\nPL/SQL\nUML\nGestión de proyectos\nCalidad\nCoach\nTest Unitarios\nJenkins\nExcel\nAngular",
+    tags: ["Formación", "Cursos", "PL/SQL", "UML", "Gestión", "Calidad", "Coach", "Test", "Jenkins", "Office", "Angular"]
   },
   {
     type: "CERTIFICACIÓN",
