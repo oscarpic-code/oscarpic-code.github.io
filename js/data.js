@@ -45,19 +45,25 @@ const PROFILE_DATA = [
     type: "FORMACIÓN",
     title: "Curso de Java — 300 horas",
     text: "Formación específica en Java de 300 horas.",
-    tags: ["Java", "Formación"]
+    tags: ["Java", "Formación","Cursos"]
   },
   {
     type: "FORMACIÓN",
     title: "Grado Superior — Desarrollo de Aplicaciones",
     text: "Formación profesional superior en Desarrollo de Aplicaciones.",
-    tags: ["Formación", "Desarrollo de aplicaciones"]
+    tags: ["Formación", "Desarrollo de aplicaciones","Titulación"]
+  },
+  {
+    type: "FORMACIÓN",
+    title: "Grado Superior — Administración de Sistemas",
+    text: "Formación profesional superior en Administración de Sistemas.",
+    tags: ["Formación", "Administración de Sistemas","Titulación"]
   },
   {
     type: "CERTIFICACIÓN",
     title: "Bootcamp 2026 — IA Generativa, LLM Apps, Agentes IA, Cursor AI",
     text: "Formación reciente centrada en:\nInteligencia artificial generativa\nAplicaciones con LLM\nAgentes de IA\nHerramientas de desarrollo asistido",
-    tags: ["IA", "LLM", "Agentes IA", "Cursor AI", "Formación"]
+    tags: ["IA", "LLM", "Agentes IA", "Cursor AI", "Formación","Cursos"]
   },
   {
     type: "IDIOMAS",
