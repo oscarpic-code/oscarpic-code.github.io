@@ -5,3 +5,25 @@ function renderSearch(query){const matches=searchProfile(query);queryText.textCo
 form.addEventListener("submit",e=>{e.preventDefault();renderSearch(input.value)});
 document.querySelectorAll("[data-search]").forEach(b=>b.addEventListener("click",()=>{input.value=b.dataset.search;renderSearch(input.value)}));
 clearButton.addEventListener("click",()=>{input.value="";results.innerHTML="";resultsSection.classList.add("hidden");input.focus()});
+document.addEventListener('DOMContentLoaded', () => {
+  const searchInput = document.getElementById('searchInput');
+  const searchForm = document.getElementById('searchForm');
+
+  // Delegación de eventos para capturar clics en botones o tarjetas con data-search
+  document.addEventListener('click', (e) => {
+    const target = e.target.closest('[data-search]');
+    if (target) {
+      const query = target.getAttribute('data-search');
+      
+      // Asignar el valor al input de búsqueda
+      if (searchInput) {
+        searchInput.value = query;
+      }
+
+      // Despachar el evento submit del formulario para ejecutar el filtrado existente
+      if (searchForm) {
+        searchForm.dispatchEvent(new Event('submit', { cancelable: true, bubbles: true }));
+      }
+    }
+  });
+});
