@@ -10,7 +10,7 @@ const PROFILE_DATA = [
 {
   "type": "IDIOMAS",
   "title": "Inglés",
-  "text": "Nivel C1. Utilizo el inglés a diario en mi puesto actual para comunicarme con compañeros y clientes de distintos países, y mantengo una formación continua a través de la plataforma Twenix.",
+  "text": "Nivel C1.\nUtilizo el inglés a diario en mi puesto actual para comunicarme con compañeros y clientes de distintos países.\nMantengo una formación continua a través de la plataforma Twenix.",
   "tags": ["Inglés", "Idiomas", "C1", "Twenix"]
 },
 {type:"TECNOLOGÍA",title:"Ecosistema de desarrollo",text:"Experiencia y conocimientos en Angular, HTML, PL/SQL, Git, SVN, YAML, JSON y XML, además del ecosistema Java.",tags:["Angular","HTML","PL/SQL","Git","SVN","YAML","JSON","XML"]}
