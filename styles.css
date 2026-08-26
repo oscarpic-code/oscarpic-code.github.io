@@ -53,6 +53,18 @@ h1 {
   letter-spacing: -.07em;
 }
 
+.title-row{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:20px;
+}
+
+.logo{
+  height:clamp(3rem,8vw,6.5rem);
+  width:auto;
+}
+
 .role {
   font-size: clamp(1.2rem, 2.5vw, 1.7rem);
   color: #d9e2f2;
