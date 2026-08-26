@@ -39,6 +39,12 @@ body {
   text-align: center;
 }
 
+.hero--compact{
+  min-height:auto;
+  padding-top:40px;
+  padding-bottom:20px;
+}
+
 .eyebrow {
   letter-spacing: .18em;
   font-size: .72rem;
