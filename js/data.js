@@ -2,20 +2,32 @@ const PROFILE_DATA = [
   {
     type: "EXPERIENCIA",
     title: "Más de 20 años de experiencia profesional",
-    text: "Trayectoria en desarrollo de software\nanálisis\nmantenimiento\narquitectura\ngestión de proyectos IT desde octubre de 2006.",
-    tags: ["Experiencia", "IT", "Desarrollo", "Gestión de proyectos", "Arquitectura"]
+    text: "Trayectoria en desarrollo de software\nAnálisis\nMantenimiento\nArquitectura\nGestión de proyectos IT desde octubre de 2006.",
+    tags: ["Trayectoria", "Experiencia", "IT", "Desarrollo", "Gestión de proyectos", "Arquitectura"]
   },
   {
     type: "EXPERIENCIA",
     title: "Java y evolución tecnológica",
     text: "Experiencia con Java y tecnologías del ecosistema, incluyendo:\nSpring\nSpring Boot\nEJB\nServlets\nSpring MVC\nJSP\nHibernate\nJPA\nMyBatis",
-    tags: ["Java", "Spring", "Spring Boot", "EJB", "Servlets", "Hibernate", "JPA", "MyBatis"]
+    tags: ["Trayectoria", "Java", "Spring", "Spring Boot", "EJB", "Servlets", "Hibernate", "JPA", "MyBatis"]
+  },
+  {
+    type: "EXPERIENCIA",
+    title: "Clientes",
+    text: "Experiencia con clientes del sector industria y sector bancaría. Conocimientos adquiridos de areas de negocio",
+    tags: ["Trayectoria", "Clientes", "Industria", "Banca"]
   },
   {
     type: "TRANSFORMACIÓN",
     title: "Migración y modernización de aplicaciones",
     text: "Experiencia en migraciones tecnológicas, incluyendo:\nJava 6 → Java 8 → Java 21\nEvolución de arquitecturas EJB + Servlets + JSP hacia Angular + Spring Boot.",
     tags: ["Migración", "Java", "Java 6", "Java 8", "Java 21", "Angular", "Spring Boot", "Modernización"]
+  },
+   {
+    type: "TRANSFORMACIÓN",
+    title: "Aplicación de la IA como metodología de trabajo",
+    text: "Análisis y estrategia de la adapatación de la IA como metodología de trabajo",
+    tags: ["Análisis", "IA", "Inteligencia artificial", "Metodología", "Modernización"]
   },
   {
     type: "IA",
