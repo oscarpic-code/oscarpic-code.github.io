@@ -7,6 +7,11 @@ const PROFILE_DATA = [
 {type:"FORMACIÓN",title:"Curso de Java — 300 horas",text:"Formación específica en Java de 300 horas.",tags:["Java","Formación"]},
 {type:"FORMACIÓN",title:"Grado Superior — Desarrollo de Aplicaciones",text:"Formación profesional superior en Desarrollo de Aplicaciones.",tags:["Formación","Desarrollo de aplicaciones"]},
 {type:"CERTIFICACIÓN",title:"Bootcamp 2026 — IA Generativa, LLM Apps, Agentes IA, Cursor AI",text:"Formación reciente centrada en inteligencia artificial generativa, aplicaciones con LLM, agentes de IA y herramientas de desarrollo asistido.",tags:["IA","LLM","Agentes IA","Cursor AI","Formación"]},
-{type:"IDIOMAS",title:"Inglés",text:"Competencia básica profesional. Score de Duolingo: 129 (julio de 2026).",tags:["Inglés","Idiomas","Duolingo"]},
+{
+  "type": "IDIOMAS",
+  "title": "Inglés",
+  "text": "Nivel C1. Utilizo el inglés a diario en mi puesto actual para comunicarme con compañeros y clientes de distintos países, y mantengo una formación continua a través de la plataforma Twenix.",
+  "tags": ["Inglés", "Idiomas", "C1", "Twenix"]
+},
 {type:"TECNOLOGÍA",title:"Ecosistema de desarrollo",text:"Experiencia y conocimientos en Angular, HTML, PL/SQL, Git, SVN, YAML, JSON y XML, además del ecosistema Java.",tags:["Angular","HTML","PL/SQL","Git","SVN","YAML","JSON","XML"]}
 ];
