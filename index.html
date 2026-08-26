@@ -95,13 +95,53 @@
   </main>
 
   <footer>
-    <span>🏡 Óscar Picazo</span>
+    <button type="button" id="contactTrigger" class="contact-trigger">✉️ Contacto</button>
     <a href="clientes.html">💼 Clientes</a>
     <a href="colaboradores.html">🤝 Colaboradores</a>
     <a href="https://github.com/oscarpic-code" target="_blank" rel="noopener">📦 GitHub</a>
   </footer>
 
+  <!-- Popup de contacto -->
+  <div id="contactOverlay" class="modal-overlay hidden">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="contactTitle">
+      <button type="button" id="contactClose" class="modal-close" aria-label="Cerrar">✕</button>
+      <h2 id="contactTitle">Contacto</h2>
+      <ul class="contact-list">
+        <li><span class="contact-icon">📧</span> <a href="mailto:oscar.pic@gmail.com">oscar.pic@gmail.com</a></li>
+        <li><span class="contact-icon">💼</span> <a href="https://www.linkedin.com/in/oscar-picazo-76a544175/" target="_blank" rel="noopener">linkedin.com/in/oscar-picazo-76a544175</a></li>
+        <!-- <li><span class="contact-icon">🐦</span> <a href="https://x.com/TU_USUARIO" target="_blank" rel="noopener">X (@TU_USUARIO)</a></li> -->
+       <li><span class="contact-icon">📸</span> <a href="https://www.instagram.com/oscar.pic.code/" target="_blank" rel="noopener">Instagram (@TU_USUARIO)</a></li>
+      </ul>
+    </div>
+  </div>
+
   <script src="js/data.js"></script>
   <script src="js/app.js"></script>
+
+   <script>
+    const contactTrigger = document.getElementById('contactTrigger');
+    const contactOverlay = document.getElementById('contactOverlay');
+    const contactClose = document.getElementById('contactClose');
+
+    function openContact() {
+      contactOverlay.classList.remove('hidden');
+    }
+
+    function closeContact() {
+      contactOverlay.classList.add('hidden');
+    }
+
+    contactTrigger.addEventListener('click', openContact);
+    contactClose.addEventListener('click', closeContact);
+
+    contactOverlay.addEventListener('click', (e) => {
+      if (e.target === contactOverlay) closeContact();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeContact();
+    });
+  </script>
+  
 </body>
 </html>
