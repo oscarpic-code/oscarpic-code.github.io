@@ -1,101 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Óscar Picazo | AI Delivery & Transformation Lead</title>
-
-    <meta name="description"
-          content="Óscar Picazo — AI Delivery & Transformation Lead. Responsable de proyectos IT, transformación digital, arquitectura de software e inteligencia artificial.">
-
-    <meta name="author" content="Óscar Picazo">
-
-    <link rel="canonical" href="https://oscarpic-code.github.io/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Óscar Picazo | AI Delivery & Transformation Lead</title>
+<meta name="description" content="Óscar Picazo — AI Delivery & Transformation Lead. Desarrollo de software, gestión de proyectos, arquitectura, transformación digital e inteligencia artificial.">
+<meta name="author" content="Óscar Picazo">
+<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-    <header>
-        <h1>Óscar Picazo</h1>
-
-        <h2>
-            Responsable de Entrega y Transformación Digital con IA
-        </h2>
-
-        <p>
-            AI Delivery &amp; Transformation Lead
-        </p>
-    </header>
-
-    <main>
-
-        <section>
-            <h2>Sobre mí</h2>
-
-            <p>
-                Profesional de IT con experiencia desde octubre de 2006
-                en desarrollo de software, gestión de proyectos,
-                arquitectura y transformación tecnológica.
-            </p>
-
-            <p>
-                Actualmente especializado en la aplicación de la
-                inteligencia artificial a la mejora de procesos,
-                herramientas y documentación.
-            </p>
-        </section>
-
-        <section>
-            <h2>Áreas de especialización</h2>
-
-            <ul>
-                <li>Gestión y entrega de proyectos IT</li>
-                <li>Transformación digital</li>
-                <li>Migración a arquitecturas cloud</li>
-                <li>Arquitectura de software</li>
-                <li>Inteligencia artificial aplicada</li>
-                <li>Análisis y resolución de incidencias</li>
-                <li>Mejora y automatización de procesos</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Tecnologías</h2>
-
-            <p>
-                Java · Spring · Spring Boot · EJB · Servlets · Spring MVC ·
-                JSP · Angular · HTML · PL/SQL · Git · SVN · YAML · JSON · XML
-            </p>
-        </section>
-
-        <section>
-            <h2>Experiencia en transformación tecnológica</h2>
-
-            <p>
-                Experiencia en evolución y modernización de aplicaciones,
-                incluyendo migraciones de Java 6 a Java 8 y posteriormente
-                a Java 21, así como la transformación de arquitecturas
-                basadas en EJB, Servlets y JSP hacia Angular y Spring Boot.
-            </p>
-        </section>
-
-        <section>
-            <h2>Inteligencia artificial</h2>
-
-            <p>
-                Investigación y adopción de herramientas de inteligencia
-                artificial para mejorar el trabajo diario, la generación
-                de documentación, el desarrollo de software y los procesos
-                de IT.
-            </p>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>© Óscar Picazo</p>
-    </footer>
-
+<main class="page">
+<section class="hero">
+<div class="eyebrow">AI DELIVERY &amp; TRANSFORMATION</div>
+<h1>Óscar Picazo</h1>
+<p class="role">AI Delivery &amp; Transformation Lead</p>
+<p class="intro">Software development · IT project management · architecture · digital transformation · AI</p>
+<div class="search-card">
+<h2>¿Qué te interesa conocer de mi perfil?</h2>
+<p>Introduce un aspecto que te pueda interesar en una palabra, por ejemplo: <strong>Java</strong></p>
+<form id="searchForm" role="search">
+<label class="sr-only" for="searchInput">Buscar en el perfil</label>
+<div class="search-box">
+<input id="searchInput" type="search" placeholder="Java" autocomplete="off">
+<button type="submit" aria-label="Buscar">⌕</button>
+</div>
+</form>
+<div class="suggestions">
+<button type="button" data-search="Java">Java</button>
+<button type="button" data-search="IA">IA</button>
+<button type="button" data-search="Spring Boot">Spring Boot</button>
+<button type="button" data-search="migración">Migración</button>
+<button type="button" data-search="proyectos">Proyectos</button>
+</div>
+</div>
+</section>
+<section id="resultsSection" class="results hidden" aria-live="polite">
+<div class="results-head">
+<div><span class="eyebrow">RESULTADOS</span><h2>Coincidencias para <span id="queryText"></span></h2></div>
+<button id="clearButton" class="clear">Limpiar</button>
+</div>
+<div id="results"></div>
+</section>
+<section class="quick-nav">
+<article><span>01</span><h3>Trayectoria</h3><p>Más de 19 años de experiencia en desarrollo y gestión IT.</p></article>
+<article><span>02</span><h3>Tecnología</h3><p>Java, Spring, Angular, bases de datos, integración y herramientas de desarrollo.</p></article>
+<article><span>03</span><h3>Transformación</h3><p>Modernización tecnológica, cloud, automatización e inteligencia artificial aplicada.</p></article>
+</section>
+</main>
+<footer><span>Óscar Picazo</span><a href="https://github.com/oscarpic-code" target="_blank" rel="noopener">GitHub</a></footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
