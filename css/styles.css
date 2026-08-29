@@ -460,3 +460,73 @@ footer a {
     flex-direction: column;
   }
 }
+
+/* =========================
+   CÓMIC
+   ========================= */
+
+.comic {
+  margin-top: 2rem;
+}
+
+.comic-viewer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.comic-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comic-image-container img {
+  display: block;
+  max-width: 100%;
+  max-height: 75vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.comic-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 48px;
+  height: 64px;
+
+  border: none;
+  border-radius: 10px;
+
+  font-size: 2rem;
+  cursor: pointer;
+
+  z-index: 2;
+}
+
+.comic-arrow--left {
+  left: 10px;
+}
+
+.comic-arrow--right {
+  right: 10px;
+}
+
+.comic-arrow:disabled {
+  opacity: 0.25;
+  cursor: default;
+}
+
+.comic-counter {
+  text-align: center;
+  margin-top: 1rem;
+  opacity: 0.7;
+}
