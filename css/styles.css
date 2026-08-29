@@ -530,3 +530,11 @@ footer a {
   margin-top: 1rem;
   opacity: 0.7;
 }
+
+.comic-logo {
+  position: absolute;
+  left: 100%;
+  margin-left: 20px;
+  height: clamp(3rem, 8vw, 6.5rem);
+  width: auto;
+}
