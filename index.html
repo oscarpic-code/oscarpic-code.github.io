@@ -1,19 +1,19 @@
-
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
 
   <title>Óscar Picazo | AI Delivery & Transformation Lead</title>
-  
+
   <meta charset="UTF-8">
-  
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <meta name="description" content="Óscar Picazo — AI Delivery & Transformation Lead. Desarrollo de software, gestión de proyectos, arquitectura, transformación digital e inteligencia artificial.">
-  <meta name="author" content="Óscar Picazo">
+  <meta name="description" content="Óscar Picazo Vivancos — AI Delivery & Transformation Lead. Desarrollo de software, gestión de proyectos, arquitectura, transformación digital e inteligencia artificial.">
+  <meta name="author" content="Óscar Picazo Vivancos">
 
   <meta property="og:type" content="profile">
   <meta property="og:title" content="Óscar Picazo | AI Delivery & Transformation Lead">
-  <meta property="og:description" content="Perfil profesional de Óscar Picazo: desarrollo de software, gestión de proyectos IT, arquitectura, transformación digital e inteligencia artificial.">
+  <meta property="og:description" content="Perfil profesional de Óscar Picazo Vivancos: desarrollo de software, gestión de proyectos IT, arquitectura, transformación digital e inteligencia artificial.">
   <meta property="og:url" content="https://oscarpic-code.github.io/">
   <meta property="og:image" content="https://oscarpic-code.github.io/img/logo.png">
   <meta property="og:site_name" content="Óscar Picazo">
@@ -31,12 +31,13 @@
       "@type": "Person",
       "@id": "https://oscarpic-code.github.io/#person",
       "name": "Óscar Picazo",
+      "alternateName": "Óscar Picazo Vivancos",
       "givenName": "Óscar",
       "familyName": "Picazo",
       "jobTitle": "AI Delivery & Transformation Lead",
       "url": "https://oscarpic-code.github.io/",
       "image": "https://oscarpic-code.github.io/img/logo.png",
-      "description": "Óscar Picazo — AI Delivery & Transformation Lead especializado en desarrollo de software, gestión de proyectos IT, arquitectura, transformación digital e inteligencia artificial.",
+      "description": "Óscar Picazo Vivancos, conocido profesionalmente como Óscar Picazo, es AI Delivery & Transformation Lead especializado en desarrollo de software, gestión de proyectos IT, arquitectura, transformación digital e inteligencia artificial.",
       "sameAs": [
         "https://github.com/oscarpic-code",
         "https://www.linkedin.com/in/oscar-picazo-76a544175/",
@@ -50,7 +51,7 @@
       "@id": "https://oscarpic-code.github.io/#website",
       "url": "https://oscarpic-code.github.io/",
       "name": "Óscar Picazo",
-      "description": "Perfil profesional de Óscar Picazo — AI Delivery & Transformation Lead.",
+      "description": "Perfil profesional de Óscar Picazo Vivancos — AI Delivery & Transformation Lead.",
       "publisher": {
         "@id": "https://oscarpic-code.github.io/#person"
       },
@@ -59,76 +60,84 @@
   ]
 }
 </script>
+
 </head>
 <body>
 
   <main class="page">
 
-    <section class="hero">
-      <p class="eyebrow">AI DELIVERY &amp; TRANSFORMATION</p>
+```
+<section class="hero">
+  <p class="eyebrow">AI DELIVERY &amp; TRANSFORMATION</p>
 
-      <div class="title-row">
-        <img src="img/logo.png" alt="Logo Óscar Picazo" class="logo">
-        <h1>Óscar Picazo</h1>
+  <div class="title-row">
+    <img src="img/logo.png" alt="Logo Óscar Picazo" class="logo">
+    <h1>Óscar Picazo</h1>
+  </div>
+
+  <p class="role">AI Delivery &amp; Transformation Lead</p>
+
+  <p class="intro">
+    Óscar Picazo · AI Delivery &amp; Transformation Lead ·
+    Software development · IT project management · Architecture ·
+    Digital transformation · AI
+  </p>
+
+  <p class="full-name">
+    Óscar Picazo Vivancos
+  </p>
+
+  <div class="search-card">
+    <h2>¿Qué te interesa conocer de mi perfil?</h2>
+    <p>Introduce un aspecto que te pueda interesar en una palabra, por ejemplo: <strong>Java</strong></p>
+
+    <form id="searchForm" role="search">
+      <label class="sr-only" for="searchInput">Buscar en el perfil</label>
+      <div class="search-box">
+        <input id="searchInput" type="search" placeholder="Java" autocomplete="off">
+        <button type="submit" aria-label="Buscar">⌕</button>
       </div>
+    </form>
 
-      <p class="role">AI Delivery &amp; Transformation Lead</p>
-      <p class="intro">
-        Óscar Picazo · AI Delivery &amp; Transformation Lead ·
-        Software development · IT project management · Architecture ·
-        Digital transformation · AI
-      </p>
+    <div class="suggestions">
+      <button type="button" data-search="Java">Java</button>
+      <button type="button" data-search="IA">IA</button>
+      <button type="button" data-search="Spring Boot">Spring Boot</button>
+      <button type="button" data-search="migración">Migración</button>
+      <button type="button" data-search="proyectos">Proyectos</button>
+    </div>
+  </div>
+</section>
 
-      <div class="search-card">
-        <h2>¿Qué te interesa conocer de mi perfil?</h2>
-        <p>Introduce un aspecto que te pueda interesar en una palabra, por ejemplo: <strong>Java</strong></p>
+<section id="resultsSection" class="results hidden" aria-live="polite">
+  <div class="results-head">
+    <div>
+      <span class="eyebrow">RESULTADOS</span>
+      <h2>Coincidencias para <span id="queryText"></span></h2>
+    </div>
+    <button id="clearButton" class="clear">Limpiar</button>
+  </div>
+  <div id="results"></div>
+</section>
 
-        <form id="searchForm" role="search">
-          <label class="sr-only" for="searchInput">Buscar en el perfil</label>
-          <div class="search-box">
-            <input id="searchInput" type="search" placeholder="Java" autocomplete="off">
-            <button type="submit" aria-label="Buscar">⌕</button>
-          </div>
-        </form>
-
-        <div class="suggestions">
-          <button type="button" data-search="Java">Java</button>
-          <button type="button" data-search="IA">IA</button>
-          <button type="button" data-search="Spring Boot">Spring Boot</button>
-          <button type="button" data-search="migración">Migración</button>
-          <button type="button" data-search="proyectos">Proyectos</button>
-        </div>
-      </div>
-    </section>
-
-    <section id="resultsSection" class="results hidden" aria-live="polite">
-      <div class="results-head">
-        <div>
-          <span class="eyebrow">RESULTADOS</span>
-          <h2>Coincidencias para <span id="queryText"></span></h2>
-        </div>
-        <button id="clearButton" class="clear">Limpiar</button>
-      </div>
-      <div id="results"></div>
-    </section>
-
-    <section class="quick-nav">
-      <article data-search="Trayectoria" role="button" tabindex="0">
-        <span>🚀</span>
-        <h3>Trayectoria</h3>
-        <p>Más de 20 años de experiencia en desarrollo y gestión IT.</p>
-      </article>
-      <article data-search="Tecnología" role="button" tabindex="0">
-        <span>🛠️</span>
-        <h3>Tecnología</h3>
-        <p>Java, Spring, Angular, bases de datos, integración y herramientas de desarrollo.</p>
-      </article>
-      <article data-search="Transformación" role="button" tabindex="0">
-        <span>🤖</span>
-        <h3>Transformación</h3>
-        <p>Modernización tecnológica, cloud, automatización e inteligencia artificial aplicada.</p>
-      </article>
-    </section>
+<section class="quick-nav">
+  <article data-search="Trayectoria" role="button" tabindex="0">
+    <span>🚀</span>
+    <h3>Trayectoria</h3>
+    <p>Más de 20 años de experiencia en desarrollo y gestión IT.</p>
+  </article>
+  <article data-search="Tecnología" role="button" tabindex="0">
+    <span>🛠️</span>
+    <h3>Tecnología</h3>
+    <p>Java, Spring, Angular, bases de datos, integración y herramientas de desarrollo.</p>
+  </article>
+  <article data-search="Transformación" role="button" tabindex="0">
+    <span>🤖</span>
+    <h3>Transformación</h3>
+    <p>Modernización tecnológica, cloud, automatización e inteligencia artificial aplicada.</p>
+  </article>
+</section>
+```
 
   </main>
 
@@ -141,6 +150,7 @@
   </footer>
 
   <!-- Popup de contacto -->
+
   <div id="contactOverlay" class="modal-overlay hidden">
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="contactTitle">
       <button type="button" id="contactClose" class="modal-close" aria-label="Cerrar">✕</button>
@@ -149,15 +159,16 @@
         <li><span class="contact-icon">📧</span> <a href="mailto:oscar.pic@gmail.com">oscar.pic@gmail.com</a></li>
         <li><span class="contact-icon">💼</span> <a href="https://www.linkedin.com/in/oscar-picazo-76a544175/" target="_blank" rel="noopener">oscar-picazo</a></li>
         <li><span class="contact-icon">🐦</span> <a href="https://x.com/oscarpic" target="_blank" rel="noopener">X (@oscarpic)</a></li>
-       <li><span class="contact-icon">📸</span> <a href="https://www.instagram.com/oscar.pic.code/" target="_blank" rel="noopener">Instagram (@oscar.pic.code)</a></li>
+        <li><span class="contact-icon">📸</span> <a href="https://www.instagram.com/oscar.pic.code/" target="_blank" rel="noopener">Instagram (@oscar.pic.code)</a></li>
       </ul>
     </div>
   </div>
 
   <script src="js/data.js"></script>
+
   <script src="js/app.js"></script>
 
-   <script>
+  <script>
     const contactTrigger = document.getElementById('contactTrigger');
     const contactOverlay = document.getElementById('contactOverlay');
     const contactClose = document.getElementById('contactClose');
@@ -181,6 +192,6 @@
       if (e.key === 'Escape') closeContact();
     });
   </script>
-  
+
 </body>
 </html>
