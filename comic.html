@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cómic | Óscar Picazo</title>
+
+<meta name="description" content="Cómic de Óscar Picazo.">
+<meta name="author" content="Óscar Picazo">
+
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+
+<body>
+
+<main class="page">
+
+  <section class="hero hero--compact">
+
+    <div class="eyebrow">AI DELIVERY &amp; TRANSFORMATION</div>
+
+    <div class="title-row">
+      <img src="img/logo.png" alt="Logo Óscar Picazo" class="logo">
+      <h1>Óscar Picazo</h1>
+    </div>
+
+    <p class="role">AI Delivery &amp; Transformation Lead</p>
+
+    <p class="intro">
+      Software development · IT project management · architecture · digital transformation · AI
+    </p>
+
+  </section>
+
+
+  <section class="comic">
+
+    <div class="results-head">
+      <div>
+        <span class="eyebrow">CÓMIC</span>
+        <h2>Mi historia</h2>
+      </div>
+    </div>
+
+    <div class="comic-viewer">
+
+      <button
+        type="button"
+        id="prevButton"
+        class="comic-arrow comic-arrow--left"
+        aria-label="Imagen anterior"
+        disabled>
+        ❮
+      </button>
+
+      <div class="comic-image-container">
+        <img
+          id="comicImage"
+          src="img/comic/1.jfif"
+          alt="Cómic de Óscar Picazo, página 1">
+      </div>
+
+      <button
+        type="button"
+        id="nextButton"
+        class="comic-arrow comic-arrow--right"
+        aria-label="Imagen siguiente">
+        ❯
+      </button>
+
+    </div>
+
+    <p id="comicCounter" class="comic-counter">
+      1 / 11
+    </p>
+
+  </section>
+
+</main>
+
+
+<footer>
+  <a href="https://oscarpic-code.github.io/">⏪ Volver</a>
+</footer>
+
+
+<script>
+
+  const totalImages = 11;
+  let currentImage = 1;
+
+  const comicImage = document.getElementById('comicImage');
+  const prevButton = document.getElementById('prevButton');
+  const nextButton = document.getElementById('nextButton');
+  const comicCounter = document.getElementById('comicCounter');
+
+
+  function updateComic() {
+
+    comicImage.src = `img/comic/${currentImage}.jfif`;
+
+    comicImage.alt =
+      `Cómic de Óscar Picazo, página ${currentImage}`;
+
+    comicCounter.textContent =
+      `${currentImage} / ${totalImages}`;
+
+    prevButton.disabled = currentImage === 1;
+    nextButton.disabled = currentImage === totalImages;
+  }
+
+
+  prevButton.addEventListener('click', () => {
+
+    if (currentImage > 1) {
+      currentImage--;
+      updateComic();
+    }
+
+  });
+
+
+  nextButton.addEventListener('click', () => {
+
+    if (currentImage < totalImages) {
+      currentImage++;
+      updateComic();
+    }
+
+  });
+
+
+  // Permitir navegar también con las flechas del teclado
+  document.addEventListener('keydown', (event) => {
+
+    if (event.key === 'ArrowLeft' && currentImage > 1) {
+      currentImage--;
+      updateComic();
+    }
+
+    if (event.key === 'ArrowRight' && currentImage < totalImages) {
+      currentImage++;
+      updateComic();
+    }
+
+  });
+
+</script>
+
+</body>
+</html>
