@@ -4,6 +4,16 @@ Repositorio oficial de la web personal y portfolio profesional de **Óscar Picaz
 
 El proyecto está diseñado bajo una arquitectura limpia donde el **contenido está desacoplado del diseño y la estructura**, permitiendo actualizar la información sin necesidad de modificar el maquetado HTML.
 
+## 👤 Sobre Óscar Picazo
+
+**Óscar Picazo** es **AI Delivery & Transformation Lead** y **Senior Developer | IT Project Manager**, con experiencia profesional desde 2006 en desarrollo de software, arquitectura, gestión de proyectos IT y transformación tecnológica.
+
+Su experiencia incluye **Java, Spring Boot, Angular, Oracle, integración de APIs, arquitectura software, cloud, automatización e inteligencia artificial**, con especial interés en la aplicación de la IA para mejorar procesos, herramientas y formas de trabajo.
+
+🌐 **[Web profesional de Óscar Picazo — AI Delivery & Transformation Lead](https://oscarpic-code.github.io/)**
+
+💼 **[Perfil de Óscar Picazo en LinkedIn](https://www.linkedin.com/in/oscar-picazo-76a544175/)**
+
 ---
 
 ## 📁 Estructura del Proyecto
